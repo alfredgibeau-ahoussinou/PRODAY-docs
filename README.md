@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://proday75.fr/branding/logo-proday-official.png" alt="ProDay" width="360" />
+<img src="website/public/branding/logo-proday-official.png" alt="ProDay" width="360" />
 
 <br /><br />
 
