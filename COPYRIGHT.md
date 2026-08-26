@@ -14,13 +14,13 @@ documentation, **sans autorisation écrite préalable**, est interdite.
 
 ## Marque
 
-« ProDay », le slogan « Connecter · Progresser · Réussir » et les éléments visuels de
+« ProDay », le slogan « CONNECTER. PROGRESSER. RÉVÉLER. » et les éléments visuels de
 l'identité ProDay ne peuvent être utilisés sans accord explicite.
 
 ## Contact
 
 - **Général :** [proday.admin@gmail.com](mailto:proday.admin@gmail.com)
-- **Partenaires :** [partenaires@proday.app](mailto:partenaires@proday.app)
+- **Partenaires :** [proday.admin@gmail.com](mailto:proday.admin@gmail.com)
 - **Sécurité :** voir [SECURITY.md](./SECURITY.md)
 
 ## Limites réalistes
