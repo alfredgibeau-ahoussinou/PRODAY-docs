@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 80" width="100%" fill="none">
+  <defs>
+    <linearGradient id="wg" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#090D16"/>
+      <stop offset="50%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#090D16"/>
+    </linearGradient>
+  </defs>
+  <path d="M0 40 Q 300 10 600 40 T 1200 40" stroke="url(#wg)" stroke-width="2" fill="none" opacity="0.65">
+    <animate attributeName="d" values="M0 40 Q 300 10 600 40 T 1200 40; M0 40 Q 300 70 600 40 T 1200 40; M0 40 Q 300 10 600 40 T 1200 40" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <text x="600" y="64" text-anchor="middle" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="2">
+    PRODAY · CONNECTER · PROGRESSER · RÉVÉLER
+  </text>
+</svg>

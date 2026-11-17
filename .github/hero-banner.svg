@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#060911"/>
+      <stop offset="55%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E6CA85"/>
+      <stop offset="50%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#997A30"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C5A059" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#E6CA85" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#C5A059" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C5A059" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#C5A059" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="cardClip">
+      <rect x="4" y="4" width="1192" height="312" rx="24"/>
+    </clipPath>
+  </defs>
+
+  <!-- Base Card -->
+  <rect x="4" y="4" width="1192" height="312" rx="24" fill="url(#bg)" stroke="#C5A059" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <g clip-path="url(#cardClip)">
+    <!-- Subtle Pitch Grid -->
+    <g stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1">
+      <line x1="600" y1="0" x2="600" y2="320"/>
+      <circle cx="600" cy="160" r="88"/>
+      <circle cx="600" cy="160" r="4" fill="#C5A059" fill-opacity="0.25"/>
+      <rect x="0" y="70" width="110" height="180"/>
+      <rect x="1090" y="70" width="110" height="180"/>
+    </g>
+
+    <!-- Breathing Gold Aura -->
+    <circle cx="600" cy="150" r="240" fill="url(#glow)">
+      <animate attributeName="r" values="210;270;210" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.65;1;0.65" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Sweeping Light Beam -->
+    <rect x="-350" y="0" width="350" height="320" fill="url(#sweep)">
+      <animate attributeName="x" values="-350;1350" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Floating Tactical Nodes -->
+    <g opacity="0.75">
+      <circle cx="210" cy="95" r="5" fill="#C5A059">
+        <animate attributeName="cy" values="95;84;95" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="260" cy="225" r="4" fill="#10B981">
+        <animate attributeName="cy" values="225;235;225" dur="4.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="940" cy="95" r="4" fill="#38BDF8">
+        <animate attributeName="cy" values="95;106;95" dur="4.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="990" cy="220" r="5" fill="#C5A059">
+        <animate attributeName="cy" values="220;208;220" dur="5s" repeatCount="indefinite"/>
+      </circle>
+      <line x1="210" y1="95" x2="260" y2="225" stroke="#C5A059" stroke-opacity="0.22" stroke-dasharray="4 4"/>
+      <line x1="940" y1="95" x2="990" y2="220" stroke="#C5A059" stroke-opacity="0.22" stroke-dasharray="4 4"/>
+    </g>
+
+    <!-- Live Pill -->
+    <g transform="translate(495, 58)">
+      <rect width="210" height="28" rx="14" fill="#FFFFFF" fill-opacity="0.06" stroke="#C5A059" stroke-opacity="0.35"/>
+      <circle cx="20" cy="14" r="4" fill="#10B981">
+        <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="113" y="18" text-anchor="middle" fill="#E6CA85" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="700" letter-spacing="1.6">BÊTA OUVERTE · v1.0.10</text>
+    </g>
+
+    <!-- Main Brand Title -->
+    <text x="600" y="162" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="10">PRODAY</text>
+
+    <!-- Animated Gold Underline -->
+    <rect x="460" y="180" width="280" height="3" rx="1.5" fill="url(#gold)">
+      <animate attributeName="width" values="180;300;180" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="510;450;510" dur="4s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Subtitle -->
+    <text x="600" y="222" text-anchor="middle" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="500" letter-spacing="1">
+      L'infrastructure du football moderne · Club · Coach · Community
+    </text>
+
+    <!-- Bottom Domain Tag -->
+    <text x="600" y="266" text-anchor="middle" fill="#C5A059" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="3">
+      PRODAY75.FR  ·  iOS  ·  ANDROID  ·  WEB
+    </text>
+  </g>
+</svg>
