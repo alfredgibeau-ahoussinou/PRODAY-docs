@@ -1,0 +1,31 @@
+name: 🐛 Signaler un bug
+description: Signaler un problème sur l'application ProDay (iOS / Android) ou le site proday75.fr
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Plateforme concernée
+      options:
+        - iOS (TestFlight)
+        - Android (APK)
+        - Site Web (proday75.fr)
+    validations:
+      required: true
+  - type: dropdown
+    id: pole
+    attributes:
+      label: Pôle concerné
+      options:
+        - Club
+        - Coach
+        - Community
+        - Autre
+  - type: textarea
+    id: description
+    attributes:
+      label: Description du problème
+      description: Expliquez ce qui s'est passé et comment le reproduire.
+    validations:
+      required: true

@@ -1,0 +1,23 @@
+name: 💡 Proposer une amélioration
+description: Suggérer une nouvelle fonctionnalité pour les clubs, coachs, joueurs ou parents
+title: "[Idée] "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: pole
+    attributes:
+      label: Pôle concerné
+      options:
+        - Club (Direction / Secrétariat)
+        - Coach (Terrain / Tactique)
+        - Community (Joueurs / Parents / Fans)
+        - Général
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Votre suggestion
+      description: Quel besoin terrain cela résout-il ?
+    validations:
+      required: true
